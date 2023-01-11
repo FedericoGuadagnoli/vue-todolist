@@ -33,7 +33,7 @@
           <ul class="list-group mt-5">
             <li v-for="(task,i) in tasks" :class="{ 'strike': task.done }" class="list-group-item d-flex justify-content-between">         
               {{ task.text}}
-              <button type="button" class="btn-close" aria-label="Close"></button>
+              <button type="button" class="btn-close" aria-label="Close" @click="deleteTask(i)"></button>
             </li>
           
           </ul>
