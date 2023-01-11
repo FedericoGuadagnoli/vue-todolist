@@ -22,14 +22,14 @@
     <div id="root">
       <div class="container">
         <div class="w-50 mx-auto">
-          <form class="row g-3 d-flex justify-content-center  my-5">
+          <div class="row g-3 d-flex justify-content-center  my-5">
             <div class="col-auto imput-group mb-3">     
-              <input type="text" class="form-control" id="newTask" placeholder="Nuova task">
+              <input v-model="newTask" type="text" class="form-control" id="newTask" placeholder="Nuova task" @keyup.enter="addTask">
             </div>
             <div class="col-auto">            
-              <button type="submit" id="Add" class="btn btn-primary">Aggiungi Task</button>
+              <button type="submit" id="Add" class="btn btn-primary" @click="addTask">Aggiungi Task</button>
             </div>
-          </form>
+          </div>
           <ul class="list-group mt-5">
             <li v-for="(task,i) in tasks" :class="{ 'strike': task.done }" class="list-group-item d-flex justify-content-between" @click="toggleDone(i)">         
               {{ task.text}}

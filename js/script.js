@@ -8,7 +8,8 @@ const app = Vue.createApp({
                 { text: 'Iniziare finalmente a giocare', done : true},
                 { text: 'Sconfiggere Malenia', done : false},
                 { text: 'Completare Elden Ring', done : false},
-            ]
+            ],
+            newTask: ''
         }
     },
 
@@ -19,9 +20,16 @@ const app = Vue.createApp({
 
         toggleDone(index) {
             this.tasks[index].done = !this.tasks[index].done
-          },
-    }
+        },
 
+        addTask() {
+            if (this.newTask) {
+              this.tasks.push({ text: this.newTask, done: false })
+              this.newTask = ''
+            }
+        }    
+    }
+    
     
 
 
