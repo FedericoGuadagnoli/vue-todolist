@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.global.js" integrity="sha512-boEFRnFthrf+bNt2FkCFAjd809yT4B9R5Kr1eTROVLdzT79sgQanuKUhu/R7eDHmWL8IcjHIkxjdEVvvP6DLMA==" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>vue-todolist</title>
+</head>
+<body>
+  <header>
+    <div class="container h-100">
+      <figure class="h-100 text-center my-5">
+        <img src="img/boolean.png"  alt="boolean" class="h-100">
+      </figure>
+    </div>
+  </header>
+  <main>
+    <div id="root">
+      <div class="container">
+        <div class="w-50 mx-auto">
+          <form class="row g-3 d-flex justify-content-center gap-3 my-5">
+            <div class="col-auto">
+              <label for="newTask" class="visually-hidden">Nuova Task</label>
+              <input type="text" class="form-control" id="newTask" value="newTask">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">Aggiungi Task</button>
+            </div>
+          </form>
+          <ul class="list-group mt-5">
+            <li class="list-group-item d-flex justify-content-between">an item
+              <button type="button" class="btn-close" aria-label="Close"></button>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">an item
+              <button type="button" class="btn-close" aria-label="Close"></button>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">an item
+              <button type="button" class="btn-close" aria-label="Close"></button>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">an item
+              <button type="button" class="btn-close" aria-label="Close"></button>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">an item
+              <button type="button" class="btn-close" aria-label="Close"></button>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+
+
+</body>
+</html>
