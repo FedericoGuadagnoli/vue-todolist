@@ -10,9 +10,15 @@ const app = Vue.createApp({
                 { text: 'Completare Elden Ring', done : false},
             ]
         }
+    },
+
+    methods: {
+        taskDone(done) {
+            tasks.done;
+        }
     }
 
-
+    
 
 
 
