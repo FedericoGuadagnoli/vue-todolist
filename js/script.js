@@ -24,9 +24,9 @@ const app = Vue.createApp({
 
         addTask() {
             if (this.newTask) {
-              this.tasks.push({ text: this.newTask, done: false })
-              this.newTask = ''
-            }
+              this.tasks.push({ text: this.newTask, done: false });
+              this.newTask = '';
+            } else alert('non hai inserito nessun testo');
         }    
     }
     
